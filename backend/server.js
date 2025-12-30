@@ -14,6 +14,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
+app.get("/", (req, res) => {
+  res.send("Backend läuft");
+});
 const PORT = process.env.PORT || 3001;
 
 app.use(cors());
@@ -399,6 +402,7 @@ app.listen(PORT, "0.0.0.0", () => {
   console.log(`POS Backend Server läuft auf Port ${PORT}`);
   console.log(`API gestartet`);
 });
+
 
 
 
