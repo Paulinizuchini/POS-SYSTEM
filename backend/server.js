@@ -388,8 +388,9 @@ app.post('/api/devices/:deviceId/transaction', async (req, res) => {
 });
 
 // Server starten
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`POS Backend Server läuft auf Port ${PORT}`);
   console.log(`API gestartet`);
 });
+
 
