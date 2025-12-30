@@ -1005,7 +1005,7 @@
       "integrity": "sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==",
       "license": "MIT",
       "engines": {
-        "node": ">= 0.8"
+        "node": "18.x"
       }
     }
   }
