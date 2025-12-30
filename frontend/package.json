@@ -1,6 +1,9 @@
 {
   "name": "pos-frontend",
   "version": "1.0.0",
+   "engines": {
+     "node": "18.x"
+     },
   "description": "POS System Frontend",
   "type": "module",
   "scripts": {
@@ -18,5 +21,6 @@
     "vite": "^5.0.8"
   }
 }
+
 
 
