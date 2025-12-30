@@ -15,6 +15,7 @@ function App() {
 
   const loadConfig = async () => {
     try {
+      console.log("FETCH STARTET JETZT");
       const response = await fetch('https://pos-system-backend-ts8m.onrender.com/api/test');
       const data = await response.json();
       setConfig(data);
@@ -68,6 +69,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
