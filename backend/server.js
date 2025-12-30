@@ -1,7 +1,3 @@
-app.use((req, res, next) => {
-  console.log("REQUEST:", req.method, req.url);
-  next();
-});
 import express from 'express';
 import cors from 'cors';
 import { v4 as uuidv4 } from 'uuid';
@@ -402,6 +398,7 @@ app.listen(PORT, "0.0.0.0", () => {
   console.log(`POS Backend Server läuft auf Port ${PORT}`);
   console.log(`API gestartet`);
 });
+
 
 
 
