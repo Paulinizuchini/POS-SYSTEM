@@ -17,7 +17,7 @@ const app = express();
 app.get("/", (req, res) => {
   res.send("Backend läuft");
 });
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
@@ -402,6 +402,7 @@ app.listen(PORT, "0.0.0.0", () => {
   console.log(`POS Backend Server läuft auf Port ${PORT}`);
   console.log(`API gestartet`);
 });
+
 
 
 
