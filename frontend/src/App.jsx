@@ -14,13 +14,18 @@ function App() {
   }, []);
 
   const loadConfig = async () => {
+    console.log("FETCH STARTET JETZT");
+    
     try {
-      console.log("FETCH STARTET JETZT");
-      const response = await fetch('https://pos-system-backend-ts8m.onrender.com/api/test');
+      const response = await
+    fetch('https://pos-system-backend-ts8m.onrender.com/api/test');
+          
+      console.log("STATUS:", response.status);
+      
       const data = await response.json();
-      setConfig(data);
-    } catch (error) {
-      console.error('Fehler beim Laden der Konfiguration:', error);
+      console.error("FETCH FEHLER:", err);
+    }  
+      
     }
   };
 
@@ -69,6 +74,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
