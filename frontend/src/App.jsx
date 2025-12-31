@@ -18,8 +18,7 @@ function App() {
       console.log("FETCH STARTET JETZT");
       
     const response = await fetch(
-      
-      "https://pos-system-backend-ts8m.onrender.com"
+      "https://pos-system-backend-ts8m.onrender.com/api/test"
     );
     console.log("STATUS:", response.status);
     } catch (error) {
@@ -80,6 +79,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
