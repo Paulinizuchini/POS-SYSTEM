@@ -18,8 +18,8 @@ function App() {
       console.log("FETCH STARTET JETZT");
       
     const response = await fetch(
-      "https://pos-system-backend-ts8m.onrender.com/api/test"
-    );
+                        `${import.meta.env.VITE_API_URL}/api/test` 
+                          );
     console.log("STATUS:", response.status);
 const data = await response.json();
       console.log("DATA:", data);
@@ -76,6 +76,7 @@ const data = await response.json();
 }
 
 export default App;
+
 
 
 
