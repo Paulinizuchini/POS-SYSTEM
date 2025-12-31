@@ -30,8 +30,6 @@ const data = await response.json();
     }
  };  
       
-    }
-  };
 
   return (
     <div className="app">
@@ -78,6 +76,7 @@ const data = await response.json();
 }
 
 export default App;
+
 
 
 
