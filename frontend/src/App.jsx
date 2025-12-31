@@ -18,7 +18,7 @@ function App() {
       console.log("FETCH STARTET JETZT");
       
     const response = await fetch(
-                        `${import.meta.env.VITE_API_URL}/api/test` 
+                        `${import.meta.env.VITE_API_URL}/api/config` 
                           );
     console.log("STATUS:", response.status);
 const data = await response.json();
@@ -76,6 +76,7 @@ const data = await response.json();
 }
 
 export default App;
+
 
 
 
