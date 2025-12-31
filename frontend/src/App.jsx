@@ -21,15 +21,14 @@ function App() {
       "https://pos-system-backend-ts8m.onrender.com/api/test"
     );
     console.log("STATUS:", response.status);
+const data = await response.json();
+      console.log("DATA:", data);
+      
+      setConfig(data);
     } catch (error) {
       console.error("FETCH FEHLER:", error);
     }
-  };
-      const data = await response.json();
-      console.log("DATA:", data);
-
-      setConfig(data);
-    }  
+ };  
       
     }
   };
@@ -79,6 +78,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
